@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Urinalysis.rc
+//
+#define HIDC_COMBO_THEME                0x808703f5    // IDD_DIALOG_OPTION

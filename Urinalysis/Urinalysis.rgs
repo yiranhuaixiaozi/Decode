@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{C36EB601-B2F3-4BE1-BB70-9E2CEA3D68B6} = s 'Urinalysis'
+		'Urinalysis.EXE'
+		{
+			val AppID = s {C36EB601-B2F3-4BE1-BB70-9E2CEA3D68B6}
+		}
+	}
+}

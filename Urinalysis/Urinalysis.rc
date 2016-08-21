@@ -1,0 +1,613 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Urinalysis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 253, 78
+STYLE WS_POPUP | WS_BORDER
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,24,20,20
+    LTEXT           "尿液分析仪报告单系统V1.0",IDC_STATIC,58,16,116,8,
+                    SS_NOPREFIX
+    LTEXT           "软件所有权归青岛汉唐生物科技有限公司所有 ，仅用来配套HIGHTOP的尿液分析仪产品",
+                    IDC_STATIC,57,29,127,35
+    DEFPUSHBUTTON   "确定",IDOK,189,49,50,14,WS_GROUP
+    PUSHBUTTON      "访问汉唐",IDC_LINKBUTTON,189,31,50,14
+    PUSHBUTTON      "帮助",IDC_HELP,189,13,50,14
+END
+
+IDD_URINALYSIS_DIALOG DIALOGEX 0, 0, 431, 259
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,187,113,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "退出程序",IDCANCEL,363,228,50,12
+    PUSHBUTTON      "辅助选项",IDC_OPTION,238,115,50,14,NOT WS_VISIBLE
+    LTEXT           "病人姓名",IDC_STATIC,15,23,32,8
+    EDITTEXT        IDC_NAME,59,21,58,12,ES_AUTOHSCROLL
+    LTEXT           "性别",IDC_STATIC,173,23,17,8
+    CONTROL         "男",IDC_SEX1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,204,
+                    21,24,10
+    CONTROL         "女",IDC_SEX2,"Button",BS_AUTORADIOBUTTON,247,21,24,10
+    EDITTEXT        IDC_AGE,59,39,58,12,ES_AUTOHSCROLL
+    LTEXT           "年龄",IDC_STATIC,15,42,25,8
+    LTEXT           "病历号",IDC_STATIC,172,42,25,8
+    EDITTEXT        IDC_CASENUMBER,207,39,63,12,ES_AUTOHSCROLL
+    LTEXT           "样本类型",IDC_STATIC,14,60,33,8
+    LTEXT           "标本号",IDC_STATIC,14,99,25,8
+    EDITTEXT        IDC_SAMPLENUMBER,45,95,53,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "送检医生",IDC_STATIC,13,78,33,11
+    LTEXT           "科室",IDC_STATIC,172,60,17,8
+    LTEXT           "检测日期",IDC_STATIC,114,99,37,8
+    LTEXT           "诊断",IDC_STATIC,171,78,17,8
+    GROUPBOX        "结果",IDC_STATIC,244,119,107,134
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER,
+                    66,122,173,131
+    GROUPBOX        "信息",IDC_STATIC,2,10,294,107
+    LTEXT           "Static",IDC_ITEM1,250,139,97,8
+    LTEXT           "Static",IDC_ITEM2,250,148,97,8
+    LTEXT           "Static",IDC_ITEM3,250,157,97,8
+    LTEXT           "Static",IDC_ITEM4,250,166,97,8
+    LTEXT           "Static",IDC_ITEM5,250,175,97,8
+    LTEXT           "Static",IDC_ITEM6,250,184,97,8
+    LTEXT           "Static",IDC_ITEM7,250,193,97,8
+    LTEXT           "Static",IDC_ITEM8,250,202,97,8
+    LTEXT           "Static",IDC_ITEM9,250,211,97,8
+    LTEXT           "Static",IDC_ITEM10,250,220,97,8
+    LTEXT           "Static",IDC_ITEM11,250,229,97,8
+    PUSHBUTTON      "查询",IDC_SERACH,8,191,50,11
+    GROUPBOX        "记录操作",IDC_STATIC,2,120,59,115
+    EDITTEXT        IDC_NAMESERACH_EDIT,5,143,50,12,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_TIMESERACH_EDIT,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,5,174,50,12
+    CONTROL         "按姓名查找",IDC_NAMESERACH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,132,46,10
+    CONTROL         "按时间查找",IDC_TIMESERACH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,159,46,10
+    PUSHBUTTON      "显示信息选项",IDC_SHOWINFORMATION,363,198,50,12
+    PUSHBUTTON      "保存结果",IDC_SAVEINFORMATION,293,117,50,14,NOT 
+                    WS_VISIBLE
+    LTEXT           "时间",IDC_TIMESHOW,355,248,76,8
+    PUSHBUTTON      "打印报告",IDC_PRINT,363,153,50,12
+    PUSHBUTTON      "数据字典",IDC_DATADICTIONARY,363,213,50,12
+    PUSHBUTTON      "删除数据",IDC_DELETEDATA,8,206,50,11
+    PUSHBUTTON      "清空列表",IDC_CLEAR,8,221,50,11
+    LTEXT           "欢迎使用HIGHTOP的产品",IDC_STATIC1,5,242,55,8
+    PUSHBUTTON      "报告单设置",IDC_REPORTSET,363,183,50,12
+    CONTROL         180,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,298,8,
+                    127,112
+    PUSHBUTTON      "汉唐尿液分析仪报告单系统",IDC_BUTTON1,2,0,426,9
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,132,19,25,25
+    PUSHBUTTON      "连接设备",IDC_CONNECT,363,123,50,12
+    EDITTEXT        IDC_TIME2,246,95,45,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_TIME,157,95,51,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "时间",IDC_STATIC,219,99,25,8
+    PUSHBUTTON      "更新数据",IDC_REFRESHDATA,363,168,50,12
+    GROUPBOX        "",IDC_STATIC,2,236,60,17
+    PUSHBUTTON      "批量回传",IDC_POSTBACK,363,138,50,12
+    COMBOBOX        IDC_SAMPLETYPE,59,58,63,72,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DOCTORNAME,59,76,63,55,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DEPARTMENT,207,58,63,67,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CONCLUSION,207,75,63,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_DIALOG_OPTION DIALOG DISCARDABLE  0, 0, 187, 117
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,59,96,50,14
+    PUSHBUTTON      "取消",IDCANCEL,118,96,50,14
+    COMBOBOX        IDC_COMBO_THEME,18,16,76,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "改变风格",IDC_BUTTON_THEME,114,16,50,14
+END
+
+IDD_SHOWINF DIALOG DISCARDABLE  0, 0, 310, 141
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,247,88,50,14
+    PUSHBUTTON      "取消",IDCANCEL,247,109,50,14
+    LISTBOX         IDC_LIST1,19,14,66,120,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "中文项目显示",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,103,99,64,10
+    CONTROL         "英文项目显示",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    103,115,64,10
+    GROUPBOX        "显示项目名称",IDC_STATIC,94,80,107,52
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,28,40,10
+    CONTROL         "Check1",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,28,40,10
+    CONTROL         "Check1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,27,40,10
+    CONTROL         "Check1",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,234,28,40,10
+    CONTROL         "Check1",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,43,40,10
+    CONTROL         "Check1",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,43,40,10
+    CONTROL         "Check1",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,43,40,10
+    CONTROL         "Check1",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,234,43,40,10
+    CONTROL         "Check1",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,99,59,40,10
+    CONTROL         "Check1",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,58,40,10
+    CONTROL         "Check1",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,58,40,10
+    GROUPBOX        "显示项目",IDC_STATIC,91,18,201,55
+END
+
+IDD_REPORTSET DIALOG DISCARDABLE  0, 0, 305, 164
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存并退出",IDOK,228,138,50,14
+    PUSHBUTTON      "取消",IDCANCEL,28,143,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_ADODC1,"{67397AA3-7FB1-11D0-B148-00A0C922E820}",
+                    NOT WS_VISIBLE,7,146,40,11
+    CONTROL         "",IDC_DATAGRID1,"{CDE57A43-8B86-11D0-B3C6-00A0C90AEA82}",
+                    WS_TABSTOP,7,7,291,128
+    LTEXT           "报告单标题",IDC_STATIC,14,139,41,8
+    EDITTEXT        IDC_REPORTCAPTION,97,138,115,14,ES_AUTOHSCROLL
+END
+
+IDD_PREPRINT DIALOG DISCARDABLE  0, 0, 196, 101
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "保存并预览",IDOK,36,42,50,14
+    PUSHBUTTON      "仅预览",IDCANCEL,114,42,50,14
+END
+
+IDD_DICTIONARY DIALOG DISCARDABLE  0, 0, 263, 152
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定并重启",IDOK,165,123,41,14
+    PUSHBUTTON      "仅确定",IDCANCEL,218,123,38,14
+    LISTBOX         IDC_LIST1,16,18,48,119,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,79,14,152,78,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "数据字典目录",IDC_STATIC,16,7,49,8
+    LTEXT           "对应数据",IDC_STATIC,146,6,33,8
+    EDITTEXT        IDC_EDIT1,131,97,99,12,ES_AUTOHSCROLL
+    LTEXT           "输入内容：",IDC_STATIC,80,99,41,8
+    PUSHBUTTON      "添加",IDC_DICTIONARYADD,75,123,38,14
+    PUSHBUTTON      "删除",IDC_DICTIONARYDEL,119,123,38,14
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,39,50,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,49,50,14
+END
+
+IDD_CONNECT DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,132,24,43,14
+    PUSHBUTTON      "取消",IDCANCEL,132,47,43,14
+    CONTROL         "端口1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,23,36,10
+    CONTROL         "端口2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,23,35,36,
+                    10
+    CONTROL         "端口3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,23,47,36,
+                    10
+    CONTROL         "端口4",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,23,59,36,
+                    10
+    CONTROL         "9600",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    78,23,32,10
+    CONTROL         "19200",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,78,35,36,
+                    10
+    CONTROL         "38400",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,78,47,36,
+                    10
+    CONTROL         "57600",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,78,59,36,
+                    10
+    GROUPBOX        "端口选择",IDC_STATIC,13,11,54,67
+    GROUPBOX        "波特率设置",IDC_STATIC,72,11,54,67
+END
+
+IDD_POSTBACK DIALOG DISCARDABLE  0, 0, 251, 106
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,194,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,194,24,50,14
+    CONTROL         "MonthCalendar1",IDC_MONTHCALENDAR1,"SysMonthCal32",
+                    MCS_NOTODAY | WS_TABSTOP,3,18,189,86
+    LTEXT           "请选定回传何时的数据：",IDC_STATIC,12,7,89,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Urinalysis Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Urinalysis\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Urinalysis.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Urinalysis 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_URINALYSIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        BOTTOMMARGIN, 253
+        HORZGUIDE, 130
+    END
+
+    IDD_DIALOG_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_SHOWINF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_REPORTSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_PREPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DICTIONARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_POSTBACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_REPORTSET DLGINIT
+BEGIN
+    IDC_ADODC1, 0x376, 809, 0
+0x0024, 0x0000, 0x0043, 0x0034, 0x0031, 0x0034, 0x0035, 0x0033, 0x0031, 
+0x0030, 0x002d, 0x0034, 0x0036, 0x0039, 0x0043, 0x002d, 0x0031, 0x0031, 
+0x0064, 0x0031, 0x002d, 0x0042, 0x0031, 0x0038, 0x0032, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0032, 0x0032, 0x0045, 0x0038, 
+0x0032, 0x0030, 0x4321, 0x1234, 0x0008, 0x0000, 0x0845, 0x0000, 0x0246, 
+0x0000, 0x6bc0, 0xba38, 0x0000, 0x0006, 0x0000, 0x0000, 0x0003, 0x0000, 
+0xffff, 0xffff, 0x000f, 0x0000, 0x001e, 0x0000, 0x0003, 0x0000, 0x0003, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0032, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x0000, 0x0000, 0xffff, 0x0000, 0x0083, 0x0000, 
+0x0050, 0x0072, 0x006f, 0x0076, 0x0069, 0x0064, 0x0065, 0x0072, 0x003d, 
+0x004d, 0x0053, 0x0044, 0x0041, 0x0053, 0x0051, 0x004c, 0x002e, 0x0031, 
+0x003b, 0x0050, 0x0065, 0x0072, 0x0073, 0x0069, 0x0073, 0x0074, 0x0020, 
+0x0053, 0x0065, 0x0063, 0x0075, 0x0072, 0x0069, 0x0074, 0x0079, 0x0020, 
+0x0049, 0x006e, 0x0066, 0x006f, 0x003d, 0x0046, 0x0061, 0x006c, 0x0073, 
+0x0065, 0x003b, 0x0045, 0x0078, 0x0074, 0x0065, 0x006e, 0x0064, 0x0065, 
+0x0064, 0x0020, 0x0050, 0x0072, 0x006f, 0x0070, 0x0065, 0x0072, 0x0074, 
+0x0069, 0x0065, 0x0073, 0x003d, 0x0022, 0x0075, 0x0069, 0x0064, 0x003d, 
+0x003b, 0x0044, 0x0052, 0x0049, 0x0056, 0x0045, 0x0052, 0x003d, 0x007b, 
+0x004d, 0x0069, 0x0063, 0x0072, 0x006f, 0x0073, 0x006f, 0x0066, 0x0074, 
+0x0020, 0x0041, 0x0063, 0x0063, 0x0065, 0x0073, 0x0073, 0x0020, 0x0044, 
+0x0072, 0x0069, 0x0076, 0x0065, 0x0072, 0x0020, 0x0028, 0x002a, 0x002e, 
+0x006d, 0x0064, 0x0062, 0x0029, 0x007d, 0x003b, 0x0044, 0x0042, 0x0051, 
+0x003d, 0x0064, 0x0062, 0x005f, 0x0044, 0x0061, 0x0074, 0x0061, 0x002e, 
+0x006d, 0x0064, 0x0062, 0x003b, 0x0022, 0x0083, 0x0000, 0x0050, 0x0072, 
+0x006f, 0x0076, 0x0069, 0x0064, 0x0065, 0x0072, 0x003d, 0x004d, 0x0053, 
+0x0044, 0x0041, 0x0053, 0x0051, 0x004c, 0x002e, 0x0031, 0x003b, 0x0050, 
+0x0065, 0x0072, 0x0073, 0x0069, 0x0073, 0x0074, 0x0020, 0x0053, 0x0065, 
+0x0063, 0x0075, 0x0072, 0x0069, 0x0074, 0x0079, 0x0020, 0x0049, 0x006e, 
+0x0066, 0x006f, 0x003d, 0x0046, 0x0061, 0x006c, 0x0073, 0x0065, 0x003b, 
+0x0045, 0x0078, 0x0074, 0x0065, 0x006e, 0x0064, 0x0065, 0x0064, 0x0020, 
+0x0050, 0x0072, 0x006f, 0x0070, 0x0065, 0x0072, 0x0074, 0x0069, 0x0065, 
+0x0073, 0x003d, 0x0022, 0x0075, 0x0069, 0x0064, 0x003d, 0x003b, 0x0044, 
+0x0052, 0x0049, 0x0056, 0x0045, 0x0052, 0x003d, 0x007b, 0x004d, 0x0069, 
+0x0063, 0x0072, 0x006f, 0x0073, 0x006f, 0x0066, 0x0074, 0x0020, 0x0041, 
+0x0063, 0x0063, 0x0065, 0x0073, 0x0073, 0x0020, 0x0044, 0x0072, 0x0069, 
+0x0076, 0x0065, 0x0072, 0x0020, 0x0028, 0x002a, 0x002e, 0x006d, 0x0064, 
+0x0062, 0x0029, 0x007d, 0x003b, 0x0044, 0x0042, 0x0051, 0x003d, 0x0064, 
+0x0062, 0x005f, 0x0044, 0x0061, 0x0074, 0x0061, 0x002e, 0x006d, 0x0064, 
+0x0062, 0x003b, 0x0022, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0016, 0x0000, 0x0073, 0x0065, 0x006c, 
+0x0065, 0x0063, 0x0074, 0x0020, 0x002a, 0x0020, 0x0066, 0x0072, 0x006f, 
+0x006d, 0x0020, 0x0074, 0x0062, 0x005f, 0x0050, 0x0072, 0x0069, 0x006e, 
+0x0074, 0x0006, 0x0000, 0x0041, 0x0064, 0x006f, 0x0064, 0x0063, 0x0031, 
+0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 0x7379, 0x6574, "\155" 
+    IDC_DATAGRID1, 0x37a, 494, 0
+0x0024, 0x0000, 0x0043, 0x0044, 0x0045, 0x0035, 0x0037, 0x0041, 0x0035, 
+0x0035, 0x002d, 0x0038, 0x0042, 0x0038, 0x0036, 0x002d, 0x0031, 0x0031, 
+0x0044, 0x0030, 0x002d, 0x0062, 0x0033, 0x0043, 0x0036, 0x002d, 0x0030, 
+0x0030, 0x0041, 0x0030, 0x0043, 0x0039, 0x0030, 0x0041, 0x0045, 0x0041, 
+0x0038, 0x0032, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x002a, 
+0x0000, 0x0440, 0x4321, 0x1234, 0x0008, 0x0000, 0x3c27, 0x0000, 0x1a75, 
+0x0000, 0xe860, 0x5ad5, 0x0000, 0x0006, 0x0001, 0x0000, 0x0002, 0x0000, 
+0x0005, 0x8000, 0x0008, 0x8000, 0x0000, 0x3f80, 0x0000, 0x4188, 0x0000, 
+0x0000, 0x0100, 0x0002, 0x0001, 0x0101, 0xff00, 0x0100, 0x0000, 0x0000, 
+0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 0xaa00, 0x4b00, 0x51b8, 0x8601, 
+0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 0x7379, 0x6574, 0x036d, 0xe352, 
+0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0xbc00, 
+0xc002, 0x01d4, 0x0600, 0x7953, 0x7473, 0x6d65, 0x0000, 0x0000, 0x000a, 
+0x0000, 0x62a5, 0x544a, 0x5355, 0x4fee, 0x6539, 0x0006, 0x0000, 0x0004, 
+0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 
+0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0039, 0x0032, 
+0x005c, 0x0050, 0x0069, 0x0063, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x5690, 0x6d83, 0x900b, 0x11d0, 0x8494, 0xa000, 
+0x11c9, 0xed10, 0x3850, 0x6b26, 0x0002, 0x0006, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0039, 0x0032, 
+0x005c, 0x0050, 0x0069, 0x0063, 0x0804, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0002, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x422c, 0x0000, 0x0000, 0x0002, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x422c, 
+    0
+END
+
+IDD_URINALYSIS_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\未标题-1.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\welcome.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_URINALYSIS          REGISTRY DISCARDABLE    "Urinalysis.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR              CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR7             CURSOR  DISCARDABLE     "res\\cursor7.cur"
+IDC_CURSOR8             CURSOR  DISCARDABLE     "res\\cursor8.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "5",                           65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\www.ico.la_edeb9ca8afe391986acfa3ca205b8485_64X64.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Urinalysis(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Urinalysis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,19 @@
+
+	// Urinalysis.idl : IDL source for Urinalysis.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (Urinalysis.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(F2D55774-0B8F-4BBD-A141-6E38AD22101B),
+	version(1.0),
+	helpstring("Urinalysis 1.0 Type Library")
+]
+library UrinalysisLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	
